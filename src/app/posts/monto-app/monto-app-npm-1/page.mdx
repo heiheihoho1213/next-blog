@@ -71,7 +71,7 @@ NPM 包是微前端设计方案之一，在设计时需要将微应用打包成�
 
 上面的例子，全局加载的 lodash 就失效了。如果项目很复杂，上述的情况就很不好处理了。为了解决上述问题，JavaScript 开始提供一种将程序拆分为可按需导入的单独模块，我们就使用目前通用的 ESModule 模块来进行拆分。
 
-[仓库地址：tutorial/npm-esmodule 分支](https://github.com/duheng1992/monto-app/tree/tutorial/npm-esmodule)
+[仓库地址：tutorial/npm-esmodule 分支](https://github.com/heiheihoho1213/monto-app/tree/tutorial/npm-esmodule)
 
 项目结构：
 
@@ -156,7 +156,7 @@ ESM 加载方式有如下优点：
 
 NPM 的微前端设计方案中，各个微应用可以采用不同的技术栈，但是构建时需要像发布业务组件一样输出 ES5 & 模块化标准的 JavaScript 库（尽管开发的是应用，但是构建的不是应用程序，不需要额外生成 HTML），从而使主应用安装各自的依赖时，可以通过模块化的方式引入微应用。主应用不需要关心微应用的技术栈，不需要关心微应用的构建配置项。
 
-我们来看一个 [demo](https://github.com/duheng1992/monto-app/tree/tutorial/npm-micro)
+我们来看一个 [demo](https://github.com/heiheihoho1213/monto-app/tree/tutorial/npm-micro)
 
 主应用我们假设使用 vue，设置子应用的路由：
 
